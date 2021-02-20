@@ -35,7 +35,11 @@
 
 ## Overview
 
-![screenshot](https://github.com/DariAlves/404-not-found/blob/main/img/screenShot.png)
+### Desktop
+![screenshot](https://github.com/DariAlves/my-team-page/blob/master/img/desktop-screen.png)
+
+### Mobile
+![screenshot](https://github.com/DariAlves/my-team-page/blob/master/img/mobile-screen.png)
 
 
 ### Built With
