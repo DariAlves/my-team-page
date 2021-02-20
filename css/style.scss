@@ -1,0 +1,169 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    padding: 4rem 0 4rem;
+
+    h1 {
+        font-family: 'PT Serif', serif;
+        font-size: 34px;
+        margin-bottom: 38px; 
+    }
+
+    .about-us {
+
+        h3 {
+            font-family: 'Poppins';
+            font-weight: 600;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-family: 'Poppins';
+            font-size: 14px;
+            max-width: 380px;
+        }
+    }
+
+}
+
+/* Team Section */
+.team-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    .card {
+
+        &:nth-child(even) {
+            margin-top: 50px;
+        }
+
+
+
+        .card-info {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+
+            p {
+                font-family: 'PT Serif';
+                writing-mode: vertical-rl;
+                font-size: 10px;
+                text-transform: uppercase;
+            }
+
+            img {
+                width: 90%;
+                max-width: 300px;
+            }
+           
+        }
+
+    .name {
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    }
+}
+
+/* Footer */
+footer {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-weight: 500;
+        color: #A9A9A9;
+        letter-spacing: 1px;
+    }
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .header {
+        display: flex;
+        align-items: center;
+        
+
+        h1 {
+            flex: 55%;
+            font-size: 40px;
+        }
+
+        .about-us {
+            flex: 45%;
+            
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
+   
+    .team-section {
+        grid-template-columns: repeat(3, 1fr);
+
+        .card {
+            width: 80%;
+
+            .card-info {
+
+                p {
+                    font-size: 12px;
+                }
+            }
+    
+            &:nth-child(2) {
+                margin-top: 100px;
+            }
+
+            &:nth-child(5) {
+                margin-top: 120px;
+            }
+    
+            .name {
+                font-size: 18px;
+            }
+        }
+
+    }
+
+    footer {
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+}

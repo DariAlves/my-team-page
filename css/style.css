@@ -1,0 +1,163 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Container */
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  padding: 4rem 0 4rem;
+}
+
+.header h1 {
+  font-family: 'PT Serif', serif;
+  font-size: 34px;
+  margin-bottom: 38px;
+}
+
+.header .about-us h3 {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.header .about-us p {
+  font-family: 'Poppins';
+  font-size: 14px;
+  max-width: 380px;
+}
+
+/* Team Section */
+.team-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.team-section .card:nth-child(even) {
+  margin-top: 50px;
+}
+
+.team-section .card .card-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.team-section .card .card-info p {
+  font-family: 'PT Serif';
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.team-section .card .card-info img {
+  width: 90%;
+  max-width: 300px;
+}
+
+.team-section .card .name {
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer p {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-weight: 500;
+  color: #A9A9A9;
+  letter-spacing: 1px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header h1 {
+    -webkit-box-flex: 55%;
+        -ms-flex: 55%;
+            flex: 55%;
+    font-size: 40px;
+  }
+  .header .about-us {
+    -webkit-box-flex: 45%;
+        -ms-flex: 45%;
+            flex: 45%;
+  }
+  .header .about-us p {
+    font-size: 18px;
+  }
+  .team-section {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .team-section .card {
+    width: 80%;
+  }
+  .team-section .card .card-info p {
+    font-size: 12px;
+  }
+  .team-section .card:nth-child(2) {
+    margin-top: 100px;
+  }
+  .team-section .card:nth-child(5) {
+    margin-top: 120px;
+  }
+  .team-section .card .name {
+    font-size: 18px;
+  }
+  footer p {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
